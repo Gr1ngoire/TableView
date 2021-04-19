@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		84196E29262C8F08008EAD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E28262C8F08008EAD3E /* AppDelegate.swift */; };
 		84196E2B262C8F08008EAD3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E2A262C8F08008EAD3E /* SceneDelegate.swift */; };
-		84196E2D262C8F08008EAD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E2C262C8F08008EAD3E /* ViewController.swift */; };
 		84196E30262C8F08008EAD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84196E2E262C8F08008EAD3E /* Main.storyboard */; };
 		84196E32262C8F08008EAD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84196E31262C8F08008EAD3E /* Assets.xcassets */; };
 		84196E35262C8F08008EAD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84196E33262C8F08008EAD3E /* LaunchScreen.storyboard */; };
+		84196E3F262C9F00008EAD3E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E3E262C9F00008EAD3E /* TableViewController.swift */; };
+		84196E48262CBD44008EAD3E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E47262CBD44008EAD3E /* Person.swift */; };
+		84196E55262DF6D0008EAD3E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E54262DF6D0008EAD3E /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84196E25262C8F08008EAD3E /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84196E28262C8F08008EAD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84196E2A262C8F08008EAD3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84196E2C262C8F08008EAD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84196E2F262C8F08008EAD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84196E31262C8F08008EAD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84196E34262C8F08008EAD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84196E36262C8F09008EAD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84196E3E262C9F00008EAD3E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		84196E47262CBD44008EAD3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		84196E54262DF6D0008EAD3E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		84196E27262C8F08008EAD3E /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				84196E28262C8F08008EAD3E /* AppDelegate.swift */,
-				84196E2A262C8F08008EAD3E /* SceneDelegate.swift */,
-				84196E2C262C8F08008EAD3E /* ViewController.swift */,
-				84196E2E262C8F08008EAD3E /* Main.storyboard */,
-				84196E31262C8F08008EAD3E /* Assets.xcassets */,
-				84196E33262C8F08008EAD3E /* LaunchScreen.storyboard */,
-				84196E36262C8F09008EAD3E /* Info.plist */,
+				84196E46262CB8F3008EAD3E /* Assets */,
+				84196E44262CA41E008EAD3E /* Recources */,
+				84196E43262CA418008EAD3E /* Controller */,
+				84196E42262CA413008EAD3E /* View */,
+				84196E41262CA40B008EAD3E /* Model */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		84196E41262CA40B008EAD3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84196E47262CBD44008EAD3E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84196E42262CA413008EAD3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84196E33262C8F08008EAD3E /* LaunchScreen.storyboard */,
+				84196E2E262C8F08008EAD3E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84196E43262CA418008EAD3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84196E28262C8F08008EAD3E /* AppDelegate.swift */,
+				84196E2A262C8F08008EAD3E /* SceneDelegate.swift */,
+				84196E3E262C9F00008EAD3E /* TableViewController.swift */,
+				84196E54262DF6D0008EAD3E /* UserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84196E44262CA41E008EAD3E /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				84196E36262C8F09008EAD3E /* Info.plist */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
+		84196E46262CB8F3008EAD3E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84196E31262C8F08008EAD3E /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84196E2D262C8F08008EAD3E /* ViewController.swift in Sources */,
 				84196E29262C8F08008EAD3E /* AppDelegate.swift in Sources */,
+				84196E55262DF6D0008EAD3E /* UserViewController.swift in Sources */,
+				84196E3F262C9F00008EAD3E /* TableViewController.swift in Sources */,
+				84196E48262CBD44008EAD3E /* Person.swift in Sources */,
 				84196E2B262C8F08008EAD3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = TableView/Recources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832H9LUWZZ;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = TableView/Recources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
