@@ -15,6 +15,7 @@
 		84196E3F262C9F00008EAD3E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E3E262C9F00008EAD3E /* TableViewController.swift */; };
 		84196E48262CBD44008EAD3E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E47262CBD44008EAD3E /* Person.swift */; };
 		84196E55262DF6D0008EAD3E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E54262DF6D0008EAD3E /* UserViewController.swift */; };
+		84196E5E262E2A0A008EAD3E /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196E5D262E2A0A008EAD3E /* SectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84196E3E262C9F00008EAD3E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		84196E47262CBD44008EAD3E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		84196E54262DF6D0008EAD3E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		84196E5D262E2A0A008EAD3E /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				84196E2A262C8F08008EAD3E /* SceneDelegate.swift */,
 				84196E3E262C9F00008EAD3E /* TableViewController.swift */,
 				84196E54262DF6D0008EAD3E /* UserViewController.swift */,
+				84196E5D262E2A0A008EAD3E /* SectionTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				84196E55262DF6D0008EAD3E /* UserViewController.swift in Sources */,
 				84196E3F262C9F00008EAD3E /* TableViewController.swift in Sources */,
 				84196E48262CBD44008EAD3E /* Person.swift in Sources */,
+				84196E5E262E2A0A008EAD3E /* SectionTableViewController.swift in Sources */,
 				84196E2B262C8F08008EAD3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

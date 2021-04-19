@@ -10,12 +10,9 @@ import UIKit
 class TableViewController: UITableViewController {
     
     private let users = Person.getUsers()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(users)
     }
     
 
@@ -34,8 +31,6 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let dataSegue = segue.destination as! UserViewController
-            print(users.count)
-            print(indexPath.row)
             dataSegue.nameData = users[indexPath.row].name
             dataSegue.surnameData = users[indexPath.row].surname
             dataSegue.emailData = users[indexPath.row].email

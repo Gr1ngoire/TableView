@@ -28,7 +28,7 @@ extension Person {
             "Connor",
             "Edward",
             "Jacob",
-            "Ivy"
+            "Evie"
         ]
         
         let surnames = [
@@ -37,7 +37,7 @@ extension Person {
             "Auditore",
             "McGregor",
             "Young",
-            "Ginger",
+            "Freye",
             "Branthe",
             "Bertran",
             "Potter"
