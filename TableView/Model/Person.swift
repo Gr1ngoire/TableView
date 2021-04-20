@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// structure for our model of user
 struct Person {
     var name: String
     var surname: String
@@ -16,9 +16,11 @@ struct Person {
 }
 
 extension Person {
+    
+    // adding a method for creating users
    static func getUsers() -> [Person] {
         
-        
+        // necessary data arrays (names, surnames, emails and phoneNumbers)
         let names = [
             "Jonathan",
             "Ezio",
@@ -68,14 +70,26 @@ extension Person {
         ]
         
         
+        // creating random unique indexes for our random users
+        var randomIndexes: [Int] = []
+        while randomIndexes.count < names.count {
+            let randomIndex = Int.random(in: 0...names.count-1)
+            if randomIndexes.contains(randomIndex) {
+                continue
+            } else {
+                randomIndexes.append(randomIndex)
+            }
+        }
+    
+        // creating models of a random users and their data
         var people: [Person] = []
-        for _ in 0...names.count-1 {
+        for index in randomIndexes {
             people.append(
                 Person(
-                    name: names[Int.random(in: 0...names.count-1)],
-                    surname: surnames[Int.random(in: 0...surnames.count-1)],
-                    email: emails[Int.random(in: 0...emails.count-1)],
-                    phoneNumber: phoneNumbers[Int.random(in: 0...phoneNumbers.count-1)]
+                    name: names[index],
+                    surname: surnames[index],
+                    email: emails[index],
+                    phoneNumber: phoneNumbers[index]
                 )
             )
         }
